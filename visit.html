@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html lang="en" style="min-height: 100vh">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <link
+      href=""
+      rel="icon"
+    />
+    <title>Chirag Shah | C K Design</title>
+    <meta content="Chirag Shah | C K Design" name="og:title" />
+    <meta content="CEO" |="" digitalno1="" name="description" />
+    <meta content="CEO" |="" digitalno1="" name="og:description" />
+    <meta
+      content=""
+      name="og:image"
+    />
+    <meta content="300" name="og:image:width" />
+    <meta content="300" name="og:image:height" />
+    <script src="./visit_files/sharer.min.js" async=""></script>
+    <link href="./visit_files/bootstrap-icons.css" rel="stylesheet" />
+    <link href="./visit_files/digitalno1.css" rel="stylesheet" />
+    <script>
+      function sendEnquiry(event) {
+        event.preventDefault();
+        let Message = document.getElementById("enquiry_message").value,
+          subject = `${document.getElementById("enquiry_name").value} | ${
+            document.getElementById("enquiry_mobile").value
+          }`,
+          mail = document.getElementById("enquiry_email").value;
+        if (mail) {
+          window.open(
+            `mailto:${mail}?subject=${encodeURIComponent(
+              subject
+            )}&body=${encodeURIComponent(Message)}`,
+            "_blank"
+          );
+        }
+      }
+      function saveContact() {
+        let aTag = document.createElement("a");
+        aTag.href = `
+data:text/vcard;charset=UTF-8,BEGIN:VCARD
+VERSION:2.1
+N:Shah;Chirag
+FN:Chirag Shah
+ORG:CKReality
+TITLE:Founder
+URL;WORK:
+EMAIL;PREF;INTERNET:shah_cks@yahoo.com
+TEL;WORK;VOICE:9913560744
+ADR;WORK;:;{&#x27;url&#x27;: &#x27;https://goo.gl/maps/9ycuDhbszBj68vVK6;}
+REV:1
+END:VCARD
+`;
+        aTag.download = "contact.vcf";
+        aTag.click();
+      }
+      document.addEventListener("DOMContentLoaded", function (event) {
+        document
+          .getElementById("photo_large_view_modal")
+          .addEventListener("show.bs.modal", function (event) {
+            let button = event.relatedTarget,
+              pic_url = button.getAttribute("data-bs-pic-url");
+
+            document.getElementById("photo_large_view_modal_img_tag").src =
+              pic_url;
+          });
+      });
+    </script>
+    <style>
+      .overlay {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: 1000;
+        top: 0;
+        left: 0;
+        background-color: rgba(255, 255, 255, 0.6);
+        transition: 0.5s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .overlay .outer_circle {
+        border: 2px solid red;
+        padding: 1rem;
+        border-radius: 50%;
+      }
+      .overlay .outer_circle .inner_circle {
+        height: 18rem;
+        width: 18rem;
+        border: 2px solid red;
+        font-size: 60px;
+        border-radius: 50%;
+        transform: rotate(-30deg);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #dc3545;
+      }
+      #footerMenuCarousel {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+      #footerMenuCarousel::-webkit-scrollbar {
+        display: none;
+      }
+      .accordion-button:not(.collapsed) {
+        background-color: #3f4f6733;
+      }
+      .accordion-button:focus {
+        box-shadow: none;
+      }
+      a {
+        text-decoration: none;
+        background-color: transparent;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body style="min-height: 100vh">
+    <div
+      class="container-fluid p-0"
+      style="background-color: #fff; min-height: 100vh"
+    >
+      <div
+        class="align-items-center justify-content-center mx-0 mx-auto position-relative row w-100"
+        style="
+          max-width: 500px;
+          background-color: #fff;
+          min-height: 100vh;
+          overflow-x: hidden;
+        "
+      >
+        <div class="px-0">
+          <div
+            class="bg-white border border-2 p-0 position-relative"
+            style="border-radius: 8px; overflow: hidden"
+          >
+            <div
+              class="position-absolute top-0 start-0"
+              style="width: 10px; min-height: 100%; background-color: #3f4f67"
+            ></div>
+            <div
+              class="text-center pb-3 pt-5"
+              style="border-radius: 8px"
+              id="home"
+            >
+              <div
+                class="mx-auto border border-3"
+                style="
+                  width: 200px;
+                  height: 200px;
+                  background: #fff;
+                  z-index: 1;
+                  background-image: url(./visit_files/chirag-shah.png);
+                  background-repeat: no-repeat;
+                  background-position: center center;
+                  background-size: cover;
+                "
+              ></div>
+              <div class="my-3 text-center">
+                <h3 class="m-0 d-inline-block">Chirag Shah</h3>
+                <hr
+                  class="mx-auto my-1 w-75"
+                  style="height: 2.5px; color: #ed6b52"
+                />
+                <h6 class="m-0 d-inline-block font-14">C K Design - CEO</h6>
+              </div>
+              <div class="my-3 pe-3 pe-md-5">
+                <a href="tel:[9913560744]" target="_blank"
+                  ><div class="align-items-center d-flex mx-auto">
+                    <div
+                      class="align-items-center d-flex justify-content-center shadow-sm text-white"
+                      style="
+                        background-color: #3f4f67;
+                        min-width: 60px;
+                        height: 60px;
+                        border-top-right-radius: 8px;
+                      "
+                    >
+                      <i class="bi font-24 bi-telephone-fill"></i>
+                    </div>
+                    <h3 class="m-0 font-18 fw-light ms-3">9913560744</h3>
+                  </div></a
+                >
+                <a
+                  href="https://api.whatsapp.com/send/?phone=919913560744&amp;text=Hi"
+                  target="_blank"
+                  ><div class="align-items-center d-flex mx-auto">
+                    <div
+                      class="align-items-center d-flex justify-content-center shadow-sm text-white"
+                      style="
+                        background-color: #3f4f67;
+                        min-width: 60px;
+                        height: 60px;
+                      "
+                    >
+                      <i class="bi font-24 bi-whatsapp"></i>
+                    </div>
+                    <h3 class="m-0 font-18 fw-light ms-3">9913560744</h3>
+                  </div></a
+                >
+                <a
+                href="https://www.instagram.com/ck.design.lifestyle/"
+                target="_blank"
+                ><div class="align-items-center d-flex mx-auto">
+                  <div
+                    class="align-items-center d-flex justify-content-center shadow-sm text-white"
+                    style="
+                      background-color: #3f4f67;
+                      min-width: 60px;
+                      height: 60px;
+                    "
+                  >
+                    <i class="bi font-24 bi-instagram"></i>
+                  </div>
+                  <h3 class="m-0 font-18 fw-light ms-3">@ck.design.lifestyle</h3>
+                </div></a
+              >
+                <a href="mailto:shah_cks@yahoo.com" target="_blank"
+                  ><div class="align-items-center d-flex mx-auto">
+                    <div
+                      class="align-items-center d-flex justify-content-center shadow-sm text-white"
+                      style="
+                        background-color: #3f4f67;
+                        min-width: 60px;
+                        height: 60px;
+                      "
+                    >
+                      <i class="bi font-24 bi-envelope-fill"></i>
+                    </div>
+                    <h3 class="m-0 font-18 fw-light ms-3">
+                      shah_cks@yahoo.com
+                    </h3>
+                  </div></a
+                >
+                <!-- <a href="#" target="_blank"
+                  ><div class="align-items-center d-flex mx-auto">
+                    <div
+                      class="align-items-center d-flex justify-content-center shadow-sm text-white"
+                      style="
+                        background-color: #3f4f67;
+                        min-width: 60px;
+                        height: 60px;
+                      "
+                    >
+                      <i class="bi font-24 bi-globe"></i>
+                    </div>
+                    <h3 class="m-0 font-18 fw-light ms-3">#</h3>
+                  </div></a
+                > -->
+                <a
+                  href="https://goo.gl/maps/9ycuDhbszBj68vVK6"
+                  target="_blank"
+                  ><div class="d-flex mx-auto mb-3">
+                    <div
+                      class="align-items-center d-flex justify-content-center shadow-sm text-white"
+                      style="
+                        background-color: #3f4f67;
+                        min-width: 60px;
+                        height: 60px;
+                        border-bottom-right-radius: 8px;
+                      "
+                    >
+                      <i class="bi font-24 bi-geo-alt-fill mt-2"></i>
+                    </div>
+                    <h3
+                      class="m-0 font-18 fw-light ms-3 mt-3"
+                      style="text-align: justify"
+                    >
+                      20/A, 'Sangeet', Amrakunj Extn., Race Course,
+                      Vadodara-390023. Gujarat, India.
+                    </h3>
+                  </div></a
+                >
+              </div>
+              <div class="row mb-3">
+                <div class="col-12">
+                  <button
+                    class="px-3 btn btn-sm waves-effect"
+                    onclick="saveContact()"
+                    style="background-color: #ed6b52"
+                  >
+                    <div
+                      class="align-items-center d-flex justify-content-center"
+                    >
+                      <div
+                        class="align-items-center d-flex justify-content-center rounded-circle bg-white"
+                        style="min-width: 25px; height: 25px"
+                      >
+                        <i
+                          class="bi font-14 bi-download"
+                          style="color: #ed6b52"
+                        ></i>
+                      </div>
+                      <h6 class="text-white m-0 ms-2">Save Contact</h6>
+                    </div>
+                  </button>
+                </div>
+              </div>
+           
+            </div>
+          </div>
+          <!-- <div class="w-100 bg-white mt-3 py-2">
+            <h6 class="m-0 text-center">
+              ©
+              <a href="#" target="_blank"
+                ><b><u>C K Design</u></b></a
+              >
+            </h6>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <script
+      src="./visit_files/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    ></script>
+    <div class="fade modal" id="photo_large_view_modal" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-body">
+            <img
+              alt="Dynamic"
+              class="w-100 h-100"
+              id="photo_large_view_modal_img_tag"
+              src="https://card.digitalno1.com/vc_box_executive/"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="fade modal" id="share_card_modal" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="align-items-center justify-content-center d-flex">
+              <button
+                class="align-items-center justify-content-center d-flex btn m-2 rounded-circle"
+                data-sharer="facebook"
+                data-url="#card/vc_box_executive"
+                style="width: 45px; height: 45px; background-color: #4267b2"
+              >
+                <i class="bi font-20 text-white bi-facebook"></i>
+              </button>
+              <button
+                class="align-items-center justify-content-center d-flex btn m-2 rounded-circle"
+                data-sharer="linkedin"
+                data-url="#card/vc_box_executive"
+                style="width: 45px; height: 45px; background-color: #0077b5"
+              >
+                <i class="bi font-20 text-white bi-linkedin"></i>
+              </button>
+              <button
+                class="align-items-center justify-content-center d-flex btn m-2 rounded-circle"
+                data-sharer="pinterest"
+                data-url="#card/vc_box_executive"
+                style="width: 45px; height: 45px; background-color: #e60023"
+              >
+                <i class="bi font-20 text-white bi-pinterest"></i>
+              </button>
+              <button
+                class="align-items-center justify-content-center d-flex btn m-2 rounded-circle"
+                data-sharer="telegram"
+                data-url="#card/vc_box_executive"
+                style="width: 45px; height: 45px; background-color: #08c"
+              >
+                <i class="bi font-20 text-white bi-telegram"></i>
+              </button>
+              <button
+                class="align-items-center justify-content-center d-flex btn m-2 rounded-circle"
+                data-sharer="twitter"
+                data-url="#card/vc_box_executive"
+                style="width: 45px; height: 45px; background-color: #1da1f2"
+              >
+                <i class="bi font-20 text-white bi-twitter"></i>
+              </button>
+              <button
+                class="align-items-center justify-content-center d-flex btn m-2 rounded-circle"
+                data-sharer="whatsapp"
+                data-url="#card/vc_box_executive"
+                style="width: 45px; height: 45px; background-color: #25d366"
+              >
+                <i class="bi font-20 text-white bi-whatsapp"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
